@@ -19,3 +19,4 @@ $ docker run docker-whale cowsay -f ghostbusters "I aint afraid of no ghost"
 
 # Enter the container to see what is there
 $ docker run -ti --entrypoint /bin/bash docker-whale
+```
