@@ -9,13 +9,13 @@ This is a slightly modified version of the Docker getting started reference that
 $ docker build -t docker-whale .
 
 # Run the container 
-$ docker run docker-whale cowsay hello
+$ docker run --rm docker-whale cowsay hello
 
 # Run the container with a different cow
-$ docker run docker-whale cowsay -f tux hello
-$ docker run docker-whale cowsay -f devil hello
-$ docker run docker-whale cowsay -f calvin "Where is hobbes?"
-$ docker run docker-whale cowsay -f ghostbusters "I aint afraid of no ghost"
+$ docker run --rm docker-whale cowsay -f tux hello
+$ docker run --rm docker-whale cowsay -f devil hello
+$ docker run --rm docker-whale cowsay -f calvin "Where is hobbes?"
+$ docker run --rm docker-whale cowsay -f ghostbusters "I aint afraid of no ghost"
 
 # Enter the container to see what is there
-$ docker run -ti --entrypoint /bin/bash docker-whale
+$ docker run --rm -ti --entrypoint /bin/bash docker-whale
